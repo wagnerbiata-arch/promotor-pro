@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14243a"><meta name="description" content="Cadastro de clientes e controle offline de visitas comerciais.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="styles.css">
+<title>Promotor Pro</title>
+</head>
+<body>
+<header class="top"><div><div class="brand">PROMOTOR <b>PRO</b></div><div class="sub">Gestão comercial offline</div></div><span id="connection" class="pill">Offline pronto</span></header>
+<nav class="tabs" aria-label="Navegação">
+<button class="tab active" data-view="dashboard">Início</button><button class="tab" data-view="clients">Clientes</button><button class="tab" data-view="route">Roteiro</button><button class="tab" data-view="visits">Visitas</button><button class="tab" data-view="reports">Relatórios</button>
+</nav>
+<main id="app" aria-live="polite"></main>
+<dialog id="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h2 id="modalTitle">Cadastro</h2><button class="icon-btn" value="cancel" aria-label="Fechar">×</button></div><div id="modalBody"></div><div class="actions"><button class="btn secondary" value="cancel">Cancelar</button><button class="btn primary" id="modalSave" value="ok">Salvar</button></div></form></dialog>
+<div id="toast" role="status" class="toast"></div>
+<script src="app.js"></script>
+</body></html>
